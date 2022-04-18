@@ -24,6 +24,7 @@ def access_bit(data, num):
     shift = int(num % 8)
     return (data >> shift) & 0x1
 
+# Forever loop
 while True:
     
     if button_pin.value():
